@@ -7,7 +7,6 @@ CREATE TABLE empresa (
 	razao_social VARCHAR(50),
     codigo_ativacao VARCHAR(50),
 	cnpj CHAR(14)
-	
 );
 
 
@@ -20,6 +19,7 @@ CREATE TABLE usuario (
 	email VARCHAR(50),
 	senha VARCHAR(50),
 	fk_empresa INT,
+	cpf VARCHAR(50),
 	FOREIGN KEY (fk_empresa) REFERENCES empresa(id)
 );
 
