@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaTech | Dashboards</title>
+    <title>TechBeer | Dashboards</title>
 
-    
+
     <link rel="stylesheet" href="./../css/dashboards.css">
     <link rel="stylesheet" href="./../css/estilo.css" />
     <script src="../js/sessao.js"></script>
@@ -32,7 +32,7 @@
 
     <div class="janela">
         <div class="header-left">
-            <h1>AquaTech</h1>
+            <h1>TechBeer</h1>
 
             <div class="hello">
                 <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
@@ -40,7 +40,7 @@
 
             <div class="btn-nav-white">
                 <a href="./cards.html">
-                    <h3>Aquários</h3>
+                    <h3>Tanques</h3>
                 </a>
             </div>
 
@@ -48,12 +48,6 @@
 
                 <h3>Gráficos</h3>
 
-            </div>
-
-            <div class="btn-nav-white">
-                <a href="./mural.html">
-                    <h3>Mural de Avisos</h3>
-                </a>
             </div>
 
             <div class="btn-logout" onclick="limparSessao()">
@@ -70,6 +64,7 @@
                 <!-- O gráfico é chamado de acordo com o id (fk_aquario) do banco  -->
             </div>
             <div id="graficos">
+                <canvas id="myChart" class="chart-container"></canvas>
             </div>
         </div>
     </div>
@@ -84,7 +79,33 @@
 
     let proximaAtualizacao;
 
-    window.onload = exibirAquariosDoUsuario();
+    window.onload = mostraGrafico();
+
+    function mostraGrafico() {
+
+        const ctx = document.getElementById('myChart');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'
+                ],
+                datasets: [{
+                    label: 'Número de Alertas na Semana',
+                    data: [5, 2, 6, 10, 18, 15, 11],
+                    borderWidth: 1,
+                    backgroundColor: '#d8970a'
+                }]
+            },
+            options: {
+                indexAxis: 'x',
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
 
     function exibirTanquesDoUsuario() {
         var tanques = JSON.parse(sessionStorage.TANQUES);

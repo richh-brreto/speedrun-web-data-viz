@@ -428,3 +428,7 @@ canvas {
   margin-bottom: 100px;
   cursor: pointer;
 }
+
+.chart-container {
+  transform: scale(0.7);
+}
