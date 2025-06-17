@@ -429,6 +429,20 @@ canvas {
   cursor: pointer;
 }
 
-.chart-container {
-  transform: scale(0.7);
+.graficos {
+  margin-left: 270px;
+  margin-top: 150px;
+  max-height: 800px;
+  max-width: 700px;
+  background-color: rgba(255, 255, 255, 0.438);
+  border-radius: 10px;
+}
+
+.kpi {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;  
 }
