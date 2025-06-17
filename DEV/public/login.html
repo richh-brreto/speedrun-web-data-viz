@@ -13,32 +13,26 @@
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="icon" href="./assets/icon/favicon2.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="fundo-madeira">
 
     <!--Header-->
 
-    <div class="header">
+    <header id="header">
         <div class="container">
-            <h1 class="titulo">AquaTech</h1>
-            <ul class="navbar">
-                <li>
-                    <a href="index.html">Inicial</a>
-                </li>
-                <li>
-                    <a href="simulador.html">Simulador</a>
-                </li>
-                <li>|</li>
-                <li class="agora">
-                    <a href="#">Login</a>
-                </li>
-                <li>
-                    <a href="cadastro.html">Cadastro</a>
-                </li>
-            </ul>
+            <section class="itens-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="login.html"><button>Login</button></a></li>
+                        <li><a href="cadastro.html"><button>Cadastro</button></a></li>
+                    </ul>
+                </nav>
+            </section>
         </div>
-    </div>
+    </header>
 
 
     <div class="login">
@@ -48,9 +42,9 @@
             </div>
         </div>
         <div class="container">
-            <div class="card card-login">
-                <h2>Olá de volta!</h2>
-                <div class="formulario">
+            <div class="card card-login" style="height: 300px; margin-top: 100px; background-color: #3f1e06;">
+                <h2  style="color: white;">Olá de volta!</h2>
+                <div class="formulario"  style="color: white;">
                     <div class="campo">
                         <span>E-mail:</span>
                         <input id="email_input" type="text" placeholder="Login">
@@ -59,7 +53,7 @@
                         <span>Senha:</span>
                         <input id="senha_input" type="password" placeholder="******">
                     </div>
-                    <button class="botao" onclick="entrar()">Entrar</button>
+                    <button class="botao" onclick="entrar()" style="background-color: white; color: #3f1e06;">Entrar</button>
                 </div>
 
                 <div id="div_aguardar" class="loading-div">
@@ -70,15 +64,6 @@
             </div>
         </div>
     </div>
-
-    <!--footer inicio-->
-    <div class="footer">
-        <div class="container">
-            <h4>Feito com amor por aluno &hearts; SPTech &copy; 2023</h4>
-            <span class="version">v1.0.0</span>
-        </div>
-    </div>
-    <!--footer fim-->
 
 </body>
 
@@ -127,7 +112,7 @@
                     sessionStorage.EMAIL_USUARIO = json.email;
                     sessionStorage.NOME_USUARIO = json.nome;
                     sessionStorage.ID_USUARIO = json.id;
-                    sessionStorage.AQUARIOS = JSON.stringify(json.aquarios)
+                    sessionStorage.TANQUES = JSON.stringify(json.tanques)
 
                     setTimeout(function () {
                         window.location = "./dashboard/cards.html";

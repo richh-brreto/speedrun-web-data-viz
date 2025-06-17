@@ -1,82 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>AquaTech | Página Inicial</title>
-
-    <script src="./js/sessao.js"></script>
-
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="icon" href="./assets/icon/favicon2.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>TECH BEER</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/header.js" defer></script>
 </head>
-
 <body>
-    <div class="header">
-      <div class="container">
-        <h1 class="titulo">AquaTech</h1>
-        <ul class="navbar">
-          <li class="agora">
-            <a href="#">Inicial</a>
-          </li>
-          <li>
-            <a href="simulador.html">Simulador</a>
-          </li>
-          <li>|</li>
-          <li>
-            <a href="login.html">Login</a>
-          </li>
-          <li>
-            <a href="cadastro.html">Cadastro</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  
-    <div class="banner">
-      <div class="container">
-        <p>Preservando <span>hoje</span> para existirem <span>amanhã</span>.</p>
-      </div>
-    </div>
-  
-    <div class="social">
-      <div class="container">
-        <div class="boxes">
-          <div class="box">
-            <img src="assets/imgs/planet-earth_color.png">
-            <h4>Missão</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quas cupiditate asperiores provident magnam
-              vitae illum iusto fugiat atque deleniti nulla sed iure suscipit, laborum, aliquid accusantium cum dicta
-              minima.</p>
-          </div>
-          <div class="box">
-            <img src="assets/imgs/lightbulb_color.png">
-            <h4>Visão</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quas cupiditate asperiores provident magnam
-              vitae illum iusto fugiat atque deleniti nulla sed iure suscipit, laborum, aliquid accusantium cum dicta
-              minima.</p>
-          </div>
-          <div class="box">
-            <img src="assets/imgs/growth_color.png">
-            <h4>Valores</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quas cupiditate asperiores provident magnam
-              vitae illum iusto fugiat atque deleniti nulla sed iure suscipit, laborum, aliquid accusantium cum dicta
-              minima.</p>
-          </div>
+    <header id="header">
+        <div class="container">
+            <section class="itens-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#historia">História</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#title">Catálogo</a></li>
+                        <li><a href="login.html"><button>Login</button></a></li>
+                        <li><a href="cadastro.html"><button>Cadastro</button></a></li>
+                    </ul>
+                </nav>
+            </section>
         </div>
-      </div>
-    </div>
-  
-    <div class="footer">
-      <div class="container">
-        <h4>Feito com amor por aluno &hearts; SPTech &copy; 2023</h4>
-        <span class="version">v1.0.0</span>
-      </div>
-    </div>
-  </body>
+    </header>
 
+    <section class="introduction" id="home">
+        <div class="container">
+            <div class="text">
+                <h1>Bem Vindo ao TechBeer</h1>
+                <h2>Aqui você poderá conhecer um pouco sobre a história e produção de cervejas, e também um grande catálogo com as principais cervejas do mercado</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="historia">
+        <div class="texto-about">
+        <h1>História</h1>
+        <h2>da Cerveja</h2>
+        </div>
+        <div class="all-card">
+            <div class="card">
+                <h1>Origem</h1>
+                <h2>A cerveja tem mais de 7.000 anos de história, com registros da Mesopotâmia e Egito, onde era consumida tanto no cotidiano quanto em rituais religiosos.</h2>
+            </div>
+            <div class="card">
+                <h1>Idade Média</h1>
+                <h2>Na Idade Média, monastérios europeus, especialmente na Alemanha e Bélgica, aprimoraram a produção de cerveja, criando estilos duradouros e guardando o conhecimento de fermentação.</h2>
+            </div>
+            <div class="card">
+                <h1>Inovação</h1>
+                <h2>No século 19, a Revolução Industrial trouxe inovações como pasteurização e refrigeração, permitindo a produção em massa e a distribuição global de cerveja.
+                </h2>
+            </div>
+            <div class="card">
+                <h1>Popularização</h1>
+                <h2>No século 20, grandes marcas de cerveja tornaram-se populares, fazendo da bebida uma das mais consumidas mundialmente, estabelecendo-a como parte da cultura global.</h2>
+            </div>
+            <div class="card">
+                <h1>Diversidade</h1>
+                <h2>A partir das décadas de 1970-1980, surgiram as microcervejarias e o movimento artesanal, com a criação de novos estilos e sabores, refletindo uma nova valorização pela diversidade na produção de cerveja.</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="solucao" id="sobre">
+        <div class="first">
+            <h1>Nossa Solução</h1>
+            <p>Monitoramento do nível de cerveja nos tanques de produção de sua empresa, utilizando alta tecnologia de sensores TCRT5000 que em tempo real medem o limite de cada tanque, evitando assim transbordamentos e prejuízos.</p>
+        </div>
+        <div class="first">
+            
+            <p>Monitoramos o nível da cerveja em cada tanque através do sensor TCRT5000, sensor esse que funciona com a reflexão de luz infravermelha emitida. Quando algum objeto está próximo ao sensor, a luz refletida gera um sinal elétrico que sinaliza o nível da cerveja no tanque. </p>
+            <h1>Tecnologia Utilizada</h1>
+        </div>
+        <div class="first">
+            <h1>Nossos Benefícios</h1>
+            <p>Com nosso sistema de monitoramento, a prevenção de transbordamentos é garantida evitando a parada na produção, bem como a otimização dos processos e aumento na eficiência operacional de sua empresa.</p>
+        </div>
+    </section>
+
+    <h1 id="title">Catálogo de Cervejas</h1>
+    <section class="catalogo">
+        <div class="cardBanda cardBanda1">
+            <div class="overlay">
+            <h2>Skol</h2>
+            <p>Lançada em 1964, a Skol é uma das cervejas mais consumidas no Brasil. Foi adquirida pela Ambev em 1980 e se tornou famosa pelo seu sabor leve e refrescante.</p>
+             </div>
+            <span class="nomeBanda">Skol</span>
+            </div>
+            <div class="cardBanda cardBanda2">
+            <div class="overlay">
+            <h2>Brahma</h2>
+            <p>Fundada em 1888, a Brahma é uma das marcas mais tradicionais do Brasil. Em 2000, se fundiu com a Antártica para formar a Ambev, tornando-se uma das cervejas mais populares do país.</p>
+
+            </div>
+            <span class="nomeBanda">Brahma</span>
+            </div>
+            <div class="cardBanda cardBanda3">
+            <div class="overlay">
+            <h2>Antártica</h2>
+            <p>Criada em 1885, a Antártica foi comprada pela Ambev em 1999. Famosa pelo seu chopp, é uma das cervejas mais consumidas nos bares e eventos brasileiros.</p>
+            </div>
+            <span class="nomeBanda">Antártica</span>
+            </div>
+            <div class="cardBanda cardBanda4">
+            <div class="overlay">
+            <h2>Heineken</h2>
+            <p>Fundada em 1864 na Holanda, a Heineken chegou ao Brasil em 2004 e rapidamente se tornou uma marca premium de grande sucesso no mercado.</p>
+            </div>
+            <span class="nomeBanda">Heineken</span>
+            </div>
+    </section>
+    <section class="catalogo">
+        <div class="cardBanda cardBanda5">
+            <div class="overlay">
+            <h2>Itaipava</h2>
+            <p>Lançada em 1997, a Itaipava é uma marca popular e acessível, produzida pela Companhia de Bebidas das Américas (CBA), hoje uma das mais consumidas no Brasil.</p>
+             </div>
+            <span class="nomeBanda">Itaipava</span>
+            </div>
+            <div class="cardBanda cardBanda6">
+            <div class="overlay">
+            <h2>Budweiser</h2>
+            <p>Criada em 1876 nos Estados Unidos, a Budweiser se tornou uma das marcas mais icônicas de cerveja globalmente. Chegou ao Brasil através da AB InBev e é conhecida por seu sabor equilibrado e de qualidade premium.</p>
+            </div>
+            <span class="nomeBanda">Budweiser</span>
+            </div>
+            <div class="cardBanda cardBanda7">
+            <div class="overlay">
+            <h2>Corona</h2>
+            <p>Originária do México, a Corona é uma das marcas mais conhecidas mundialmente, especialmente pela sua popularidade nas praias e em festas. Com um sabor suave, é frequentemente servida com uma fatia de limão.</p>
+            </div>
+            <span class="nomeBanda">Corona</span>
+            </div>
+            <div class="cardBanda cardBanda8">
+            <div class="overlay">
+            <h2>Original</h2>
+            <p>A Cerveja Original é uma marca tradicional brasileira, que pertence à Ambev. Conhecida por seu sabor mais encorpado, é muito popular em churrascos e ocasiões descontraídas no Brasil, especialmente no Rio de Janeiro.</p>
+            </div>
+            <span class="nomeBanda">Original</span>
+            </div>
+    </section>
+    <footer>
+        <h1>&copy; TechBeer <span>2025</span></h1>
+    </footer>
+</body>
 </html>

@@ -14,27 +14,14 @@ body {
   --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
   --tamanho-footer: 65px;
 }
+#fundo-madeira{
+  background-image: url('../assets/madeira-certo.jpg');
+}
 
 .container {
   display: flex;
   width: 80%;
   margin: auto;
-}
-
-.header {
-  height: var(--tamanho-header);
-  border-bottom: 2px solid #32b9cd;
-}
-
-.header .container {
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-
-.header a {
-  text-decoration: none;
-  color: #e3b062;
 }
 
 .agora {
@@ -141,7 +128,7 @@ body {
 
 .login {
   height: var(--tamanho-login);
-  background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+  background-image: url('../assets/madeira-certo.jpg');
   background-size: cover;
 }
 
