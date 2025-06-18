@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaTech | Tempo Real</title>
+    <title>TechBeer | Tempo Real</title>
 
 
     <link rel="stylesheet" href="./../css/dashboards.css">
@@ -26,25 +26,19 @@
 
         <div class="header-left dash-header">
 
-            <h1>AquaTech</h1>
+            <h1>TechBeer</h1>
 
             <div class="hello">
                 <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
             </div>
 
             <div class="btn-nav">
-                <h3>Aquários</h3>
+                <h3>Tanques</h3>
             </div>
 
             <div class="btn-nav-white">
                 <a href="./dashboard.html">
                     <h3>Gráficos</h3>
-                </a>
-            </div>
-
-            <div class="btn-nav-white">
-                <a href="./mural.html">
-                    <h3>Mural de Avisos</h3>
                 </a>
             </div>
 
@@ -98,7 +92,7 @@
 <script>
 
     function exibirAquarios() {
-        JSON.parse(sessionStorage.AQUARIOS).forEach(item => {
+        JSON.parse(sessionStorage.TANQUES).forEach(item => {
             document.getElementById("cardAquarios").innerHTML += `
                     <div class="card-aquario">
                         <div class="title-aquario">

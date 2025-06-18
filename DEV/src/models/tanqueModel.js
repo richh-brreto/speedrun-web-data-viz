@@ -8,6 +8,12 @@ function buscarTanquesPorEmpresa(empresaId) {
   return database.executar(instrucaoSql);
 }
 
+function puxar() {
+    var instrucaoSql = `select dayname(dataHora) as dia_semana, time(dataHora) as hora_dado from alertas 
+    where fk_tanque =${1} and data_hora >= DATE_SUB(NOW(), INTERVAL 7 DAY);`;
+    return database.executar(instrucaoSql);
+};
+
 function cadastrar(empresaId, descricao) {
 
   var instrucaoSql = `INSERT INTO tanque (descricao, fk_empresa) VALUES (${descricao}, ${empresaId})`;
@@ -18,5 +24,6 @@ function cadastrar(empresaId, descricao) {
 
 module.exports = {
   buscarTanquesPorEmpresa,
-  cadastrar
+  cadastrar,
+  puxar
 }
